@@ -142,12 +142,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
-			'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta..<p/>',
+			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp.' +
+			'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
-			'TTryck p&aring; den andra sidan f&ouml;r att forts&auml;tta..<p/>',
+			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp.' +
+			'Tryck p&aring; den andra sidan f&ouml;r att forts&auml;tta.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -193,7 +193,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						''Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute</font>.<br/>',
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det<b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/>',
 						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
