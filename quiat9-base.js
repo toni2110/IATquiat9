@@ -334,7 +334,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Error messages in the feedback
 			manyErrors: 'Det var f&ouml;r m&aring;nga fel f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
 			tooFast: 'Det var f&ouml;r m&aring;nga snabba f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
-			notEnough: 'et var inte tillr&auml;ckligt m&aring;nga f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.'
+			notEnough: 'Det var inte tillr&auml;ckligt m&aring;nga f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
 		};
 
 		// extend the "current" object with the default
