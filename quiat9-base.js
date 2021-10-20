@@ -321,7 +321,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : '\n \n Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', //Will be shown below the feedback text. 
+			debriefingTextBottom : [
+				'<div>',
+				'<p align="left" style="margin-left:5px">',
+					'<br/>',
+					'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', 
+					'</p>',
+				'</div>'
+				].join('\n'),
+				//Will be shown below the feedback text. 
             		debriefingTextBottomTouch : '\n \n Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
