@@ -1301,12 +1301,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                 {
 					inherit : 'Default',
                     media : {word : (piCurrent.debriefingTextTop)},
-                    location:{left:2,top:15,right:2},
+                    location:{left:2,top:10,right:2},
                 },
                 {
                     inherit: 'Default',
                     media :{word: ('<%=current.feedback%>') },
-                    location:{left:2,top:40,right:2}
+                    location:{left:2,top:25,right:2}
                 },
                 {
 					inherit : 'Default',
