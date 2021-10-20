@@ -2,7 +2,7 @@
 define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
 
 	/**
-	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Gal. Modified by toni2110.
+	Created by: Yoav Bar-Anan. Modified by Gal. Modified by toni2110.
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
