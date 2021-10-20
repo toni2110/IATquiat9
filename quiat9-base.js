@@ -315,22 +315,22 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			showDebriefing:true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'Tryck på; mellanslag för att se ditt resultat', //Text in the trial that comes before showing the debriefing.
+			preDebriefingText : 'Tryck på mellanslag för att se ditt resultat', //Text in the trial that comes before showing the debriefing.
 			preDebriefingTouchText : 'Tryck på det nedre gröna området för att se ditt resultat', //Touch version for the text in the trial that comes before showing the debriefing.
 			debriefingTextTop : 'Ditt resultat:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', //Will be shown below the feedback text. 
-            		debriefingTextBottomTouch : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
+			debriefingTextBottom : '\n \n Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', //Will be shown below the feedback text. 
+            		debriefingTextBottomTouch : '\n \n Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens för categoryB över categoryA.<br/>',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens för categoryB över categoryA.<br/>',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens för categoryB över categoryA.<br/>',
-			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.<br/>',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens för categoryB över categoryA.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens för categoryB över categoryA.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens för categoryB över categoryA.',
+			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.',
 
 			//Error messages in the feedback
 			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.<br/>',
