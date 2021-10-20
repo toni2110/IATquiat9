@@ -29,7 +29,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				background: '#ffffff',
 				borderWidth: 5,
 				canvasBackground: '#ffffff',
-				borderColor: 'lightblue'
+				borderColor: 'dark grey'
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
@@ -70,9 +70,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			attribute1 :
 			{
-				name : 'Negativa ord',
+				name : 'negativa ord',
 				title : {
-					media : {word : 'Bad words'},
+					media : {word : 'Negativa ord'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -91,9 +91,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			attribute2 :
 			{
-				name : 'Positiva',
+				name : 'positiva ord',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'Positiva ord'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -142,11 +142,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp.' +
+			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas.' +
 			'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp.' +
+			'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas.' +
 			'Tryck p&aring; den andra sidan f&ouml;r att forts&auml;tta.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
@@ -165,7 +165,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText : 'Tryck på space för att fortsätta till nästa uppgift', 
+			finalText : 'Tryck på mellanslag för att fortsätta till nästa uppgift', 
 			finalTouchText : 'Tryck på det nedre gröna området för att fortsätta till nästa uppgift',
 
 			touchMaxStimulusWidth : '50%', 
@@ -178,14 +178,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">leftAttribute.</font>' +
 				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp.' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas.' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
-				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
-				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
+				'<p align="center">Tryck p&aring; <b>mellanslag</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -197,9 +197,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det<b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#0000ff">rightAttribute</font>.<br/>',
 						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
-						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>ar s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.',
+						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.',
 					'</p>',
-					'<p align="center">Tryck p&aring; <b>det l&auml;gre </b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
+					'<p align="center">Tryck p&aring; det <b>nedre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -209,10 +209,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font>. ' +
 				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>' +
 				'Objekten kommer visas ett &aring;t g&aring;ngen.<br/><br/>' +
-				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' +
-				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
-				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>'+
+				'<p align="center">Tryck p&aring; <b>mellanslag</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -224,9 +224,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>',
 						'Objekten kommer visas ett &aring;t g&aring;ngen.<br/>',
 						'<br/>',
-						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.',
+						'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.',
 					'</p>',
-					'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
+					'<p align="center">Tryck p&aring; det <b>nedre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -236,10 +236,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Anv&auml;nd tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font> samt f&ouml;r  <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Varje objekt tillh&ouml;r endast en kategori.<br/><br/>' +
-				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. ' +
+				'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas. ' +
 				'Tryck p&aring; den andra tangenten f&ouml;r att forts&auml;tta.<br/>' + 
-				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
-				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<p align="center">Tryck p&aring; <b>mellanslag</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -250,21 +250,21 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<p align="left" style="margin-left:5px">',
 						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.</br>',
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.</br>',
-							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var sa snabb du kan</u> samtidigt som du trycker r&auml;tt.</br>',
+							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.</br>',
 						'</p>',
-						'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
+						'<p align="center">Tryck p&aring; det <b>nedre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Denna del &auml;r samma som f&ouml;rra delen.<br/>' +
+				'Den h&auml;r delen &auml;r samma som f&ouml;rra delen.<br/>' +
 				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Anv&auml;nd tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Varje objekt tillh&ouml;r endast en kategori.<br/><br/>' +
-				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
-				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<p align="center">Tryck p&aring; <b>mellanslag</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
@@ -275,20 +275,20 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>',
 						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/>',
+						'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/>',
 					'</p>',
-					'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
+					'<p align="center">Tryck p&aring; det <b>nedre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Var beredd, kategorierna har bytt position!</b><br/>' +
+				'<b>Var beredd, kategorierna har nu bytt position!</b><br/>' +
 				'Anv&auml;nd det v&auml;nstra fingret f&ouml;r tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font>.<br/>' +
 				'Anv&auml;nd det h&ouml;gra fingret f&ouml;r tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
-				'<p align="center">Tryck p&aring; <b>space</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
+				'<u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/><br/></p>' +
+				'<p align="center">Tryck p&aring; <b>mellanslag</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
@@ -296,14 +296,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Var beredd, kategorierna har bytt position!<br/>',
+						'Var beredd, kategorierna har nu bytt position!<br/>',
 							'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> items.<br/>',
 							'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> r&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> items.<br/>',
 							'Objekten kommer visas ett &aring;t g&aring;ngen.',
 							'<br/>',
-							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> dyka upp. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u>, samtidigt som du trycker r&auml;tt.<br/>',
+							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> att visas. Tryck p&aring; den andra sidan. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br/>',
 						'</p>',
-						'<p align="center">Tryck p&aring; det <b>l&auml;gre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
+						'<p align="center">Tryck p&aring; det <b>nedre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -314,27 +314,27 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			showDebriefing:true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'Tryck p&aring; space f&ouml;r att se ditt resultat', //Text in the trial that comes before showing the debriefing.
-			preDebriefingTouchText : 'Tryck p&aring; det nedre gr&ouml;na omr&aring;det f&ouml;r att se ditt resultat', //Touch version for the text in the trial that comes before showing the debriefing.
+			preDebriefingText : 'Tryck på; mellanslag för att se ditt resultat', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Tryck på det nedre gröna området för att se ditt resultat', //Touch version for the text in the trial that comes before showing the debriefing.
 			debriefingTextTop : 'Ditt resultat:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'Detta resultat &auml;r ingen definitiv utv&auml;rdering av dina attityder utan &auml;r enbart avsett f&ouml;r utbildningssyfte. Tryck p&aring; space f&ouml;r att forts&auml;tta.', //Will be shown below the feedback text. 
-            		debriefingTextBottomTouch : 'Detta resultat &auml;r ingen definitiv utv&auml;rdering av dina attityder utan &auml;r enbart avsett f&ouml;r utbildningssyfte. Tryck p&aring; det nedre gr&ouml;na omr&aring;det f&ouml;r att forts&auml;tta.',
+			debriefingTextBottom : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', //Will be shown below the feedback text. 
+            		debriefingTextBottomTouch : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens f&ouml;r categoryB &ouml;ver categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens f&ouml;r categoryB &ouml;ver categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens f&ouml;r categoryB &ouml;ver categoryA.',
-			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har n&aring;gra automatiska preferenser mellan categoryA och categoryB.',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens för categoryB över categoryA.</br>',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens för categoryB över categoryA.</br>',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens för categoryB över categoryA.</br>',
+			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.</br>',
 
 			//Error messages in the feedback
-			manyErrors: 'Det var f&ouml;r m&aring;nga fel f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
-			tooFast: 'Det var f&ouml;r m&aring;nga snabba f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
-			notEnough: 'Det var inte tillr&auml;ckligt m&aring;nga f&ouml;rs&ouml;k f&ouml;r att kunna s&auml;kerst&auml;lla ett resultat.',
+			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.</br>',
+			tooFast: 'Det var för många snabba försök för att kunna säkerställa ett resultat.</br>',
+			notEnough: 'Det var inte tillräckligt många försök för att kunna säkerställa ett resultat.</br>',
 		};
 
 		// extend the "current" object with the default
