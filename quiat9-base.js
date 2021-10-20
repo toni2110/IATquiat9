@@ -28,6 +28,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				proportions : 0.7,
 				background: '#ffffff',
 				borderWidth: 5,
+				padding: 0.1,
 				canvasBackground: '#ffffff',
 				borderColor: 'black'
 			},
