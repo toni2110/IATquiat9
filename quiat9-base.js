@@ -334,9 +334,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.',
 
 			//Error messages in the feedback
-			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.<br/>',
-			tooFast: 'Det var för många snabba försök för att kunna säkerställa ett resultat.<br/>',
-			notEnough: 'Det var inte tillräckligt många försök för att kunna säkerställa ett resultat.<br/>',
+			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.',
+			tooFast: 'Det var för många snabba försök för att kunna säkerställa ett resultat.',
+			notEnough: 'Det var inte tillräckligt många försök för att kunna säkerställa ett resultat.',
 		};
 
 		// extend the "current" object with the default
@@ -1306,12 +1306,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                 {
                     inherit: 'Default',
                     media :{word: ('<%=current.feedback%>') },
-                    location:{left:2,top:25,right:2}
+                    location:{left:2,top:30,right:2}
                 },
                 {
 					inherit : 'Default',
                     media : {word : (isTouch ? piCurrent.debriefingTextBottomTouch:piCurrent.debriefingTextBottom)},
-                    location:{left:2,top:50,right:2}
+                    location:{left:2,top:70,right:2}
                 }
              
                 
