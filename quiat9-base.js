@@ -25,11 +25,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 725,
-				proportions : 0.7,
+				proportions : 0.5,
 				background: '#ffffff',
 				borderWidth: 5,
 				canvasBackground: '#ffffff',
-				borderColor: 'dark grey'
+				borderColor: 'black'
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
