@@ -189,7 +189,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
@@ -204,7 +204,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Placera ett av dina v&auml;nstra fingrar p&aring; tangenten <b>E</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font>. ' +
 				'<br/>Placera ett av dina h&ouml;gra fingrar p&aring; tangenten <b>I</b> f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font>.<br/>' +
@@ -216,7 +216,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
@@ -231,7 +231,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Anv&auml;nd tangenten <b>I</b> f&ouml;r <font color="#336600">rightCategory</font> samt f&ouml;r  <font color="#0000ff">rightAttribute</font>.<br/>' +
@@ -243,7 +243,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<br/>',
 					'<br/>',
@@ -257,7 +257,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Den h&auml;r delen &auml;r samma som f&ouml;rra delen.<br/>' +
 				'Anv&auml;nd tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br/>' +
@@ -267,7 +267,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p align="center">Tryck p&aring; <b>mellanslag</b> n&auml;r du &auml;r redo att b&ouml;rja.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
-					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
+					'<p align="center"><u>Del blockNum av nBlocks</u></p>',
 					'<br/>',
 					'<br/>',
 
@@ -282,7 +282,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>Var beredd, kategorierna har nu bytt position!</b><br/>' +
 				'Anv&auml;nd det v&auml;nstra fingret f&ouml;r tangenten <b>E</b> f&ouml;r <font color="#336600">leftCategory</font>.<br/>' +
@@ -292,7 +292,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
