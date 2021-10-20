@@ -249,9 +249,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.</br>',
-						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.</br>',
-							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.</br>',
+						'Placera ett av dina v&auml;nstra fingrar &ouml;ver det <b>v&auml;nstra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">leftCategory</font> samt f&ouml;r <font color="#0000ff">leftAttribute</font>.<br />',
+						'Placera ett av dina h&ouml;gra fingrar &ouml;ver det <b>h&ouml;gra</b> gr&ouml;na omr&aring;det f&ouml;r objekt som tillh&ouml;r kategorin <font color="#336600">rightCategory</font> samt f&ouml;r <font color="#0000ff">rightAttribute</font>.<br />',
+							'Om du g&ouml;r ett misstag kommer ett r&ouml;tt <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Var s&aring; snabb du kan</u> samtidigt som du trycker r&auml;tt.<br />',
 						'</p>',
 						'<p align="center">Tryck p&aring; det <b>nedre</b> gr&ouml;na omr&aring;det f&ouml;r att b&ouml;rja.</p>',
 				'</div>'
@@ -327,15 +327,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens för categoryB över categoryA.</br>',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens för categoryB över categoryA.</br>',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens för categoryB över categoryA.</br>',
-			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.</br>',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens för categoryB över categoryA.<br />',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens för categoryB över categoryA.<br />',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens för categoryB över categoryA.<br />',
+			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.<br />',
 
 			//Error messages in the feedback
-			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.</br>',
-			tooFast: 'Det var för många snabba försök för att kunna säkerställa ett resultat.</br>',
-			notEnough: 'Det var inte tillräckligt många försök för att kunna säkerställa ett resultat.</br>',
+			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.<br />',
+			tooFast: 'Det var för många snabba försök för att kunna säkerställa ett resultat.<br />',
+			notEnough: 'Det var inte tillräckligt många försök för att kunna säkerställa ett resultat.<br />',
 		};
 
 		// extend the "current" object with the default
