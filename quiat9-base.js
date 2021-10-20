@@ -1301,7 +1301,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                 {
 					inherit : 'Default',
                     media : {word : (piCurrent.debriefingTextTop)},
-                    location:{left:2,top:10,right:2},
+                    location:{left:2,top:15,right:2},
                 },
                 {
                     inherit: 'Default',
@@ -1311,7 +1311,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                 {
 					inherit : 'Default',
                     media : {word : (isTouch ? piCurrent.debriefingTextBottomTouch:piCurrent.debriefingTextBottom)},
-                    location:{left:2,top:45,right:2}
+                    location:{left:2,top:50,right:2}
                 }
              
                 
