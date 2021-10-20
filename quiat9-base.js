@@ -323,6 +323,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
 			debriefingTextBottom : [
 				'<div>',
+				'<div>',
 				'<p align="left" style="margin-left:5px">',
 					'<br/>',
 					'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', 
@@ -330,7 +331,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 				].join('\n'),
 				//Will be shown below the feedback text. 
-            		debriefingTextBottomTouch : '\n \n Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
+            		debriefingTextBottomTouch : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
